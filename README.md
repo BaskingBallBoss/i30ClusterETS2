@@ -27,7 +27,7 @@ Apparently SimHub used to support servo motors but they removed it for being too
 
 - **NOTE**: The code I post here is quite rather disgusting and very messy but im too lazy to make it beautiful. maybe throw it into chatgpt to make it easier to read for yourself.
 - **PINOUT SHEET** - As much as I want to create a diagram for you, I can't think on where everything goes anymore because I zip tied all the wires together to make it look nice and so its all mixed. Below is a list of what I can remember but you might have to experiment around.
-
+- Original pinout sheet found on this forum post https://i30ownersclub.com/index.php?topic=59197.0
 
 - **PINS AND RELAYS**
   - **ARDUINO MEGA**: ABS, FRONT FOG, HAND BRAKE - THESE ARE CONTROLLED DIRECTLY TO PINS WITH THE ARDUINO
