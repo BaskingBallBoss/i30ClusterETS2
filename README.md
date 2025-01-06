@@ -17,6 +17,19 @@ List of components:
 The tachometer code is taken from this guy: https://github.com/Bacon8tor/5inTach
 Apparently SimHub used to support servo motors but they removed it for being too noisy or something. I tried to implement this code with SimHub's main code but had compatability issues with the Tone.h library which led me to using a separate arduino. If you're smart enough you can probably make it work and thus remove the extra arduino.
 - The custom protocol file is what you copy into SimHub's Arduino settings for 'Custom Protocol for the MAIN ARDUINO that run the lights'
+-**Things that dont work at the moment/ issues with the cluster**
+  - Fuel has a mind of its own and seems to just stay around nearly full
+  - Engine/water temp just doesn't work at all (i think its part of CANBUS)
+  - EPS light goes away for a few seconds when cluster is powered on (part of CANBUS)
+  - Speedometer sometimes drops to 0 but then quickly jumps back up to where its supposed to be
+  - Not everything on the pinout sheet works (such as PRND doing nothing when I tried to wire it up but also there's missing features on my cluster such as Low Beam icon and rear fog
 
 
 - **NOTE**: The code I post here is quite rather disgusting and very messy but im too lazy to make it beautiful. maybe throw it into chatgpt to make it easier to read for yourself.
+- **PINOUT SHEET** - As much as I want to create a diagram for you, I can't think on where everything goes anymore because I zip tied all the wires together to make it look nice and so its all mixed. Below is a list of what I can remember but you might have to experiment around.
+
+
+- **PINS AND RELAYS**
+  - **ARDUINO MEGA**: ABS, FRONT FOG, HAND BRAKE - THESE ARE CONTROLLED DIRECTLY TO PINS WITH THE ARDUINO
+  - **RELAYS**: Literally everything else - MINE CONTAINS A CLUSTER OF ICONS/LIGHTS INTO ONE RELAY WHICH IS MAINLY FOR THE ENGINE STARTUP, HIGH BEAM IS ON ITS OWN ALONG WITH CRUISE
+
