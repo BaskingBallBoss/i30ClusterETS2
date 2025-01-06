@@ -1,0 +1,13 @@
+if([DataCorePlugin.GameData.TurnIndicatorLeft], '0','1') + ';' +
+if([DataCorePlugin.GameData.TurnIndicatorRight], '0','1') + ';' +
+format([DataCorePlugin.GameData.NewData.SpeedKmh],'0') + ';' + 
+if([DataCorePlugin.GameData.EngineStarted], '0', '1') + ';' +
+if([DataCorePlugin.GameRawData.TruckValues.CurrentValues.LightsValues.BeamHigh], '1','0') + ';' +
+if([GameRawData.TruckValues.CurrentValues.DashboardValues.CruiseControl], '1','0') + ';' +
+if([GameRawData.TruckValues.CurrentValues.MotorValues.BrakeValues.ParkingBrake], '1','0') + ';' +
+if([EngineIgnitionOn], '1','0') + ';' +
+if([GameRawData.TruckValues.CurrentValues.LightsValues.Parking], '1','0') + ';' +
+if([GameRawData.ControlValues.GameValues.Brake], '1.00','0') + ';' +
+if([GameRawData.TruckValues.CurrentValues.LightsValues.Brake], '1','0') +';' +
+format([DataCorePlugin.Computed.Fuel_Percent], '0') + ';' +
+if([GameRawData.TruckValues.CurrentValues.LightsValues.AuxFront], 'Full','Dimmed')
