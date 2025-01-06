@@ -16,7 +16,7 @@ List of components:
 
 The tachometer code is taken from this guy: https://github.com/Bacon8tor/5inTach
 Apparently SimHub used to support servo motors but they removed it for being too noisy or something. I tried to implement this code with SimHub's main code but had compatability issues with the Tone.h library which led me to using a separate arduino. If you're smart enough you can probably make it work and thus remove the extra arduino.
-- The custom protocol file is what you copy into SimHub's Arduino settings for 'Custom Protocol'
+- The custom protocol file is what you copy into SimHub's Arduino settings for 'Custom Protocol for the MAIN ARDUINO that run the lights'
 
 
 - **NOTE**: The code I post here is quite rather disgusting and very messy but im too lazy to make it beautiful. maybe throw it into chatgpt to make it easier to read for yourself.
